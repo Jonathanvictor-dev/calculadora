@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #00204a, #000b17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: background-animation 10s linear infinite alternate;
+}
+
+.calculator {
+    background-color: #000b17;
+    border-radius: 10px;
+    padding: 2%;
+    max-width: 400px;
+    width: 80%;
+    text-align: center;
+    animation: shadow-animation 5s infinite alternate;
+}
+
+.display {
+    background-color: #00204a;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.display input {
+    width: 100%;
+    padding: 10px;
+    font-size: inherit;
+    text-align: right;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #00204a;
+    color: #fff;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #00204a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 0 0 10px #0270ff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #000b17;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #0270ff;
+    }
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
