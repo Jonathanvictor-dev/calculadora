@@ -1,5 +1,5 @@
 # Calculadora Simples
-### Direcionamento deploy: [calculadora simples](https://calculadora-ten-khaki.vercel.app/)
+### Deploy: [calculadora simples](https://calculadora-ten-khaki.vercel.app/)
 
 ## Sobre 
 #### Desenvolvi a calculadora para testar e aprimorar meus conhecimentos em JavaScript. O projeto é simples, mas me permitiu praticar lógica de programação e explorar métodos.
